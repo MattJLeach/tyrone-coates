@@ -1,0 +1,47 @@
+nav {
+	font-family: 'New Rocker', cursive;
+	padding: 5px 0;
+	clear: both;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #000;
+	-webkit-box-shadow: 0px 2px 7px 1px rgba(88,88,88,0.5);
+-moz-box-shadow: 0px 2px 7px 1px rgba(88,88,88,0.5);
+box-shadow: 0px 2px 7px 1px rgba(88,88,88,0.5);
+
+	#brand {
+		float: left;
+
+		h1 {
+			margin: 0;
+			padding: 0;
+			font-size: 3em;
+			
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		float: right;
+
+		li {
+			display: inline-block;
+
+			a {
+				text-decoration: none;
+				color: #c8c8c8;
+				padding: 20px;
+				position: relative;
+				top: 20px;
+
+				&:hover {
+					color: red;
+				}
+			}
+		}
+	}
+}

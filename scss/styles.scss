@@ -1,0 +1,23 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #000;
+	color: #c8c8c8;
+}
+
+.wrapper {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+// Import typography
+@import 'typography';
+
+// Navigation styles
+@import 'navigation';
+
+// Layout
+@import 'layout';

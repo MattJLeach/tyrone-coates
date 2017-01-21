@@ -1,0 +1,43 @@
+#home {
+	margin-top: 70px;
+	height: 532px;
+	background: url('../imgs/headshot.jpg') center center no-repeat;
+}
+
+#drums {
+	height: 600px;
+	margin: 50px auto;
+	background: url('../imgs/drums.jpg') fixed center no-repeat;
+	background-size: cover;
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		height: 50rem;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -25rem;
+		background: url('../imgs/tear.png') center center repeat-x;
+	}
+}
+
+#album {
+	clear: both;
+	overflow: hidden;
+
+	.artwork {
+		float: left;
+		width: 40%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.testimonial {
+		float: right;
+		width: 59%;
+	}
+}
