@@ -1,3 +1,7 @@
+.disable-scroll {
+	overflow: hidden;
+}
+
 nav {
 	font-family: 'New Rocker', cursive;
 	padding: 5px 0;
@@ -6,6 +10,7 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 10;
 	background: #000;
 	-webkit-box-shadow: 0px 2px 7px 1px rgba(88,88,88,0.5);
 	-moz-box-shadow: 0px 2px 7px 1px rgba(88,88,88,0.5);
@@ -26,7 +31,7 @@ nav {
 		display: none;
 	}
 
-	ul {
+	ul.site-nav {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -65,8 +70,12 @@ nav {
 			right: 15px;
 		}
 
-		ul {
+		ul.site-nav {
 			display: none;
+
+			&.open {
+
+			}
 		}
 	}
 }
