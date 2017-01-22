@@ -9,6 +9,9 @@
 	margin: 50px auto;
 	background: url('../imgs/drums.jpg') fixed center no-repeat;
 	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
 	position: relative;
 
 	&:before {
@@ -31,6 +34,16 @@
 		float: left;
 		width: 40%;
 
+		.artwork-image {
+			width: 100%;
+			height: 400px;
+			background: url('../imgs/child-in-the-man.jpg') center center no-repeat;
+			background-size: contain;
+			-o-background-size: contain;
+			-moz-background-size: contain;
+			-webkit-background-size: contain;
+		}
+
 		img {
 			width: 100%;
 		}
@@ -47,5 +60,14 @@
 		margin-top: 60px;
 		height: 250px;
 		background: url('../imgs/headshot-small.jpg') center center no-repeat;
+	}
+
+	#drums {
+		height: 300px;
+		background: url('../imgs/drums-small.jpg') fixed center no-repeat;
+		background-size: cover;
+		-o-background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
 	}
 }
