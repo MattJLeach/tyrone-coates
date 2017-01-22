@@ -3,7 +3,6 @@
 }
 
 nav {
-	font-family: 'New Rocker', cursive;
 	padding: 5px 0;
 	clear: both;
 	overflow: hidden;
@@ -41,6 +40,7 @@ nav {
 			display: inline-block;
 
 			a {
+				font-family: 'New Rocker', cursive !important;
 				text-decoration: none;
 				color: #c8c8c8;
 				padding: 20px;
