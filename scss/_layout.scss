@@ -1,6 +1,6 @@
 #home {
 	margin-top: 70px;
-	height: 532px;
+	height: 500px;
 	background: url('../imgs/headshot.jpg') center center no-repeat;
 }
 
@@ -45,5 +45,7 @@
 @media (max-width: 850px) {
 	#home {
 		margin-top: 60px;
+		height: 250px;
+		background: url('../imgs/headshot-small.jpg') center center no-repeat;
 	}
 }
