@@ -1,3 +1,8 @@
+h1, h2, h3 {
+	text-align: center;
+	font-family: 'New Rocker', cursive;
+}
+
 #home {
 	margin-top: 70px;
 	height: 500px;
@@ -17,18 +22,30 @@
 	&:before {
 		content: '';
 		display: block;
-		height: 50rem;
+		height: 6rem;
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: -25rem;
-		background: url('../imgs/tear.png') center center repeat-x;
+		top: -3rem;
+		background: url('../imgs/tear-top.png') center center repeat-x;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		height: 6rem;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -3rem;
+		background: url('../imgs/tear-bottom.png') center center repeat-x;
 	}
 }
 
 #album {
 	clear: both;
 	overflow: hidden;
+	margin-bottom: 50px;
 
 	.artwork {
 		float: left;
@@ -52,6 +69,42 @@
 	.testimonial {
 		float: right;
 		width: 59%;
+		text-align: center;
+		margin-top: 25px;
+
+		.description, .author {
+			margin: 20px auto;
+		}
+	}
+}
+
+#events {
+	margin-top: 25px;
+	padding: 50px 0;
+	background: #c8c8c8;
+	color: #000;
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		height: 6rem;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -3rem;
+		background: url('../imgs/tear-top.png') center center repeat-x;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		height: 6rem;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -3rem;
+		background: url('../imgs/tear-bottom.png') center center repeat-x;
 	}
 }
 
@@ -69,5 +122,18 @@
 		-o-background-size: cover;
 		-moz-background-size: cover;
 		-webkit-background-size: cover;
+	}
+
+	#album {
+		.artwork {
+			float: none;
+			width: 100%;
+		}
+		.testimonial {
+			float: none;
+			width: 100%;
+
+
+		}
 	}
 }
