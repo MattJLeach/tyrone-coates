@@ -14,9 +14,17 @@
 
 #events {
     overflow: hidden;
+    text-align: center;
 
     .event {
         width: 50%;
         float: left;
+
+        iframe {
+            display: block;
+            width: 90%;
+            height: 400px;
+            margin: 0 auto;
+        }
     }
 }
