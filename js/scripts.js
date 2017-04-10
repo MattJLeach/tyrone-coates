@@ -23,11 +23,11 @@ $(function() {
         $('html,body').animate({
           scrollTop: target.offset().top - 60
         }, 1000);
+				if (document.getElementById('site-nav').className !== 'site-nav') {
+					toggleNav();
+				}
         return false;
       }
     }
-		if (document.getElementById('site-nav').className !== 'site-nav') {
-			toggleNav();
-		}
   });
 });
