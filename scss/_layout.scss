@@ -104,6 +104,16 @@
 		bottom: 0;
 		background: url('../imgs/tear-bottom.png') center center repeat-x;
 	}
+
+	.album-artwork {
+		margin: 0 auto;
+		max-width: 450px;
+		padding: 10px;
+
+		img {
+			width:100%;
+		}
+	}
 }
 
 footer {
