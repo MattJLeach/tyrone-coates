@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#000" />
@@ -49,16 +49,16 @@
 			<p>In 1988 he moved to Sydney, Australia to further his career. After supporting the famous Party Boys, Ty was asked to join the band the next day to replace their current singer. He did so and quickly struck up a song-writing partnership/chemistry with Alan Lancaster (bassist for Status Quo) and John Brewster (guitarist for the Angels). The three soon left the Party Boys and formed the Bombers. They were signed shortly after to A&amp;M Records in the USA and recorded the critically acclaimed album Aim High. The Bombers worked live around Australia supporting acts such as Alice Cooper, Skid Row and many others in order to promote their album. The Bombers disbanded in 1994, whereby Ty formed and recorded with Sydney band Brainchild before started his solo career. He recorded two EP’s and continued working live around Australia. He also did a lot of session work in the advertising industry recording some of the more notable jingles and themes for products and events. Ty put his music career on hold in 1997 when he pursued his martial arts on a full time basis, something he had practised since the mid-80’s. This new career took him around the world, where he lived in the USA for 5 years and 7 years in the UK. During his time in the UK he resurrected his music career and began playing live around London.</p>
 			<div id="videos">
 				<div class="video">
-					<iframe src="https://www.youtube.com/embed/N_NT12M3nv0" frameborder="0" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/N_NT12M3nv0" frameborder="0" allowfullscreen title="video"></iframe>
 				</div>
 				<div class="video">
-					<iframe src="https://www.youtube.com/embed/oslOlI4787Y" frameborder="0" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/oslOlI4787Y" frameborder="0" allowfullscreen title="video"></iframe>
 				</div>
 				<div class="video">
-					<iframe src="https://www.youtube.com/embed/IuMwkzwILx0" frameborder="0" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/IuMwkzwILx0" frameborder="0" allowfullscreen title="video"></iframe>
 				</div>
 				<div class="video">
-					<iframe src="https://www.youtube.com/embed/luhrwuMuACs" frameborder="0" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/luhrwuMuACs" frameborder="0" allowfullscreen title="video"></iframe>
 				</div>
 			</div>
 		</div>
@@ -86,7 +86,7 @@
 		</div>
 		<div class="wrapper">
 			<div class="single-video">
-				<iframe src="https://www.youtube.com/embed/8MoANmyjrSc" frameborder="0" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/8MoANmyjrSc" frameborder="0" allowfullscreen title="Ty Coates Child in the man"></iframe>
 			</div>
 		</div>
 	</section>
@@ -99,12 +99,12 @@
 		<div class="event">
 			<h3>Saturday 1st July</h3>
 			<p>Coast Hotel, Budgewoi</p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13348.439010056778!2d151.563512!3d-33.237428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7ced0dc487af3d8!2sCoast+Hotel+Budgewoi!5e0!3m2!1sen!2suk!4v1491771612880" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13348.439010056778!2d151.563512!3d-33.237428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7ced0dc487af3d8!2sCoast+Hotel+Budgewoi!5e0!3m2!1sen!2suk!4v1491771612880" frameborder="0" style="border:0" allowfullscreen title="Map Coast Hotel, Budgewoi"></iframe>
 		</div>
 		<div class="event">
 			<h3>Friday 28th July</h3>
 			<p>Lazybones Lounge, Marrickville, Sydney</p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.1820001034466!2d151.154144551804!3d-33.91071512857404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b06412db6dc9%3A0xabafdd6c1b8c345b!2sLazybones+Lounge+Restaurant+%26+Bar!5e0!3m2!1sen!2suk!4v1491771690068" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.1820001034466!2d151.154144551804!3d-33.91071512857404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b06412db6dc9%3A0xabafdd6c1b8c345b!2sLazybones+Lounge+Restaurant+%26+Bar!5e0!3m2!1sen!2suk!4v1491771690068" frameborder="0" style="border:0" allowfullscreen title="Map Lazybones Lounge, Marrickville, Sydney"></iframe>
 		</div>
 	</section>
 
@@ -112,6 +112,19 @@
 		&copy; 2017 - Ty Coates<br />Site Designed and Created by <a href="http://mattleachdigital.com" target="_blank">Matt Leach</a>
 	</footer>
 
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+				navigator.serviceWorker.register('/js/sw.js').then(function(registration) {
+					// Registration was successful
+					// console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}, function(err) {
+					// registration failed :(
+					// console.log('ServiceWorker registration failed: ', err);
+				});
+			});
+		}
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
